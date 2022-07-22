@@ -1,56 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# To-do List
 
-> Description the project.
-
+> A web app that allows you to add activities and also remove them
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- Javascript
+- Webpack
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
-
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+- Clone this repository to get it
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- IDE (VS CODE, SUBLIME ETC)
+- knowledge of html, css and javascript
+- knowledge of webpack
+- web browser (chrome, safari, opera mini or edge)
 
 ### Install
 
-### Usage
+- npm Eslint
+- npm stylelint & hint
+- webpack
 
 ### Run tests
 
-### Deployment
-
-
+-Run (npm start)
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@github](https://github.com/MxoDevops)
+- Twitter: [@twitter](https://twitter.com/godecuy)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ThokozaniNgubane)
 
 ## 🤝 Contributing
 
