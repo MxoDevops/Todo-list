@@ -25,12 +25,13 @@ p {
   color: gray;
   text-align: start;
   margin-left: 1rem;
+  font-weight: 700;
 }
 
 .headline {
   border-bottom: 2px solid rgb(209, 206, 206);
   color: gray;
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -45,7 +46,7 @@ p {
   font-size: 0.9rem;
 }
 
-.fa-arrow-left {
+.fa-arrow-right {
   padding: 0.9rem 0.6rem;
   font-size: 0.8rem;
 }
