@@ -100,7 +100,7 @@ addList.addEventListener('keypress', (event) => {
   }
 });
 
-//clear all
+// clear all
 
 const clearAll = document.getElementById('clear-all');
 clearAll.addEventListener('click', () => {
