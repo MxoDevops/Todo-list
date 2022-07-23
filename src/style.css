@@ -1,106 +1,121 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  background-color: #888;
+}
+
+.main-section {
+  background-color: #fff;
+  width: 40%;
+  margin: 9rem auto;
+  border: 2px solid rgb(160, 159, 159);
+  text-align: start;
+  z-index: 901;
+}
+
+p {
+  color: gray;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.headline {
+  border-bottom: 2px solid rgb(209, 206, 206);
+  color: gray;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rotate,
+.arrow {
+  text-align: end;
+}
+
+.fa-rotate {
+  padding: 0 0.6rem;
+  font-size: 0.9rem;
+}
+
+.fa-arrow-left {
+  padding: 0.9rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+input:focus {
   outline: none;
-  text-decoration: none;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 62%;
+#todo-items li {
+  list-style-type: none;
 }
 
-.container {
-  width: 960px;
-  margin: 0 auto;
-  margin-top: 16rem;
-  border: 1px solid #e6e6e6;
-  box-shadow: 0 1.6rem 2rem #e6e6e6;
-  z-index: 9;
+.check-mark {
+  text-decoration: line-through;
 }
 
-.title,
-.input-container,
-.lists {
-  border-bottom: 1px solid #e6e6e6;
-  padding: 1.6rem;
+.list-item-hover {
+  background-color: #1fdfed;
 }
 
-.title,
-.input-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title i {
-  color: #cfcfcf;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.list {
-  list-style: none;
-  font-size: 1.6rem;
-}
-
-.list li {
-  display: flex;
+.list-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr 1fr 0.5fr);
   align-items: center;
-  justify-content: space-between;
-  padding: 11px;
-  border-bottom: 1px solid #f0eeee;
+  padding: 0.2rem 0;
+  border-bottom: 1px solid rgb(231, 219, 219);
 }
 
-.list .check {
-  display: flex;
-  align-items: center;
+.text-input {
+  grid-column: 2/9;
 }
 
-.title h2 {
-  font-size: 32px;
-  color: #464646;
+.hide {
+  display: none;
 }
 
-.list .check h2 {
-  font-size: 40px;
-  padding: 0 16px;
-  color: #807f7f;
-  font-style: italic;
+.icons {
+  text-align: right;
+  padding-right: 2rem;
+  color: gray;
 }
 
-.icon i {
-  color: #cfcfcf;
-  font-size: 40px;
-  cursor: cell;
+.list-section {
+  border-bottom: 2px solid rgb(170, 170, 170);
+  color: gray;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.clear-container {
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  background-color: #f8f8f8;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+body {
+  font-family: 'Exo', sans-serif;
 }
 
-.input-container input {
-  border: none;
-  font-size: 28px;
-  padding: 0.4rem;
+.context {
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 
-.input-container input::placeholder {
-  font-style: italic;
-  color: #cfcfcf;
-}
-
-.btn {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.btn-clear {
-  color: #5c5c5c;
-  font-size: 25px;
-  font-weight: 600;
+.context h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
 }

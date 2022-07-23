@@ -5,25 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
-      src="https://kit.fontawesome.com/08f89b8954.js"
+      src="https://kit.fontawesome.com/716817a6e7.js"
       crossorigin="anonymous"
     ></script>
-    <title>To-do-List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-Do-List</title>
   </head>
   <body>
-    <section class="container">
-      <div class="title">
-        <h2>Today's To Do</h2>
-        <i class="fas fa-sync-alt"></i>
+    <section class="main-section">
+      <div class="headline">
+        <div>
+          <p>TO-DO</p>
+        </div>
+        <span class="rotate"><i class="fa-solid fa-rotate"></i></span>
       </div>
-      <div class="input-container">
-        <input type="text" placeholder="Add to your list..." />
-        <i class="fa-solid fa-arrow-turn-down-left"></i>
+
+      <div class="list-section">
+        <span
+          ><input
+            type="text"
+            id="addlist"
+            class="new-list"
+            placeholder="Add list"
+        /></span>
+        <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
       </div>
-      <ul class="list"></ul>
-      <div class="clear-container">
-        <button type="button" class="btn btn-clear">Clear all completed</button>
-      </div>
+
+      <ul id="todo-items"></ul>
+      <input id="clear-all" type="button" value="Clear all completed" />
     </section>
   </body>
 </html>
