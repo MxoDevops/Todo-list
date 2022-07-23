@@ -103,7 +103,7 @@ addList.addEventListener('keypress', (event) => {
 // clear all
 
 const clearAll = document.getElementById('clear-all');
-clearAll.addEventListener('click', () => {
+clearAll.addEventListener('change', () => {
   const clear = items.filter((item) => item.completed === true);
 
   clear.forEach((item) => {
