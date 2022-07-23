@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
-      src="https://kit.fontawesome.com/08f89b8954.js"
+      src="https://kit.fontawesome.com/716817a6e7.js"
       crossorigin="anonymous"
     ></script>
-    <title>To-do-List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>To-Do-List</title>
   <script defer src="main.js"></script></head>
   <body>
-    <div class="to-do-container" id="to-do-container">
-      <div class="title-div">
-        <h1 class="title">To Do</h1>
-        <i class="fas fa-sync-alt"></i>
+    <section class="main-section">
+      <div class="headline">
+        <div>
+          <p>To-do</p>
+        </div>
+        <span class="rotate"><i class="fa-solid fa-rotate"></i></span>
       </div>
-      <form class="form">
-        <div class="input-container">
-          <input
+
+      <div class="list-section">
+        <span
+          ><input
             type="text"
-            class="text-input"
-            id="text-input"
-            placeholder="Add to your list..."
-          />
-          <button type="button" class="add-button" id="add-button">
-            <i class="fas fa-level-down-alt fa-rotate-90"></i>
-          </button>
-        </div>
-        <div class="to-dos" id="to-dos"></div>
-        <div class="clear-button-container">
-          <button class="clear-button" id="clear-button">
-            Clear Completed
-          </button>
-        </div>
-      </form>
-    </div>
+            id="addlist"
+            class="new-list"
+            placeholder="Add to your list"
+        /></span>
+        <span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
+      </div>
+
+      <ul id="list-items"></ul>
+      <input type="button" value="Clear completed" />
+    </section>
   </body>
 </html>
