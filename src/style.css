@@ -7,33 +7,32 @@
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: darkgray;
+  font-size: 17px;
+  line-height: 1.8;
+  background-color: #888;
 }
 
 .main-section {
   background-color: #fff;
   width: 40%;
   margin: 9rem auto;
-  border: 2px solid gainsboro;
+  border: 2px solid rgb(160, 159, 159);
   text-align: start;
-  z-index: 900;
+  z-index: 901;
 }
 
 p {
   color: gray;
   text-align: start;
-  margin-left: 0.9rem;
+  margin-left: 1rem;
 }
 
 .headline {
-  border-bottom: 1px solid rgb(231, 219, 219);
+  border-bottom: 2px solid rgb(209, 206, 206);
   color: gray;
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
 }
 
 .rotate,
@@ -42,18 +41,18 @@ p {
 }
 
 .fa-rotate {
-  padding: 0 0.5rem;
-  font-size: 0.8rem;
+  padding: 0 0.6rem;
+  font-size: 0.9rem;
 }
 
 .fa-arrow-left {
-  padding: 1rem 0.6rem;
-  font-size: 0.7rem;
+  padding: 0.9rem 0.6rem;
+  font-size: 0.8rem;
 }
 
 input {
   width: 100%;
-  padding: 0.8rem;
+  padding: 0.9rem;
   background-color: transparent !important;
   border: none !important;
 }
@@ -62,22 +61,24 @@ input:focus {
   outline: none;
 }
 
-#list-items li {
+#todo-items li {
   list-style-type: none;
-  font-size: 20px;
-  font-weight: 700;
+}
+
+.check-mark {
+  text-decoration: line-through;
 }
 
 .list-item-hover {
-  background-color: #1fd5ed;
+  background-color: #1fdfed;
 }
 
 .list-wrap {
   display: grid;
   grid-template-columns: repeat(3, 0.5fr 1fr 0.5fr);
   align-items: center;
-  padding: 0.4rem 0;
-  border-bottom: 1px solid rgb(177, 175, 175);
+  padding: 0.2rem 0;
+  border-bottom: 1px solid rgb(231, 219, 219);
 }
 
 .text-input {
@@ -90,18 +91,17 @@ input:focus {
 
 .icons {
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 2rem;
   color: gray;
 }
 
 .list-section {
-  border-bottom: 1px solid rgb(231, 219, 219);
+  border-bottom: 2px solid rgb(170, 170, 170);
   color: gray;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* CSS animation */
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 body {

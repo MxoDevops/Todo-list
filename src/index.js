@@ -2,22 +2,25 @@ import './style.css';
 import items from './modules/storage.js';
 import { Actions } from './modules/crud.js';
 
-const listItems = document.getElementById('list-items');
+const listItems = document.getElementById('todo-items');
 const displayList = () => {
   let listHtml = '';
   items.forEach((item) => {
     let boxes = '';
+    let checkMark = '';
     if (item.completed === true) {
       boxes = 'checked';
+      checkMark = 'check-mark';
     }
     listHtml += `
                <li id="list-${item.index}">
             <div class="list-wrap">
-              <div><input id="checkbox" type="checkbox" ${boxes}/></div>
+              <div><input id="checkbox-${item.index}" name="ch-${item.index}" type="checkbox" ${boxes}/></div>
               <div  id= "text-input" class="text-input">
                 <input
+                  id="task-desc-${item.index}"
                   type="text"
-                  class="list-item"
+                  class="list-item ${checkMark}"
                   value="${item.description}"
                 />
               </div>
@@ -60,6 +63,19 @@ const displayList = () => {
         displayList();
       }
     });
+
+    const checkbox = document.getElementById(`checkbox-${i}`);
+    checkbox.addEventListener('click', () => {
+      document.querySelector(`#task-desc-${i}`).classList.add('checked-mark');
+
+      if (checkbox.checked) {
+        items[i].completed = true;
+      } else {
+        items[i].completed = false;
+      }
+      localStorage.setItem('tasks', JSON.stringify(items));
+      displayList();
+    });
   }
 };
 
@@ -82,4 +98,18 @@ addList.addEventListener('keypress', (event) => {
 
     displayList();
   }
+});
+
+const clearAll = document.getElementById('clear-all');
+clearAll.addEventListener('click', () => {
+  const clear = items.filter((item) => item.completed === true);
+
+  clear.forEach((item) => {
+    items.splice(item.index, 1);
+    items.forEach((item, index) => {
+      item.index = index;
+    });
+  });
+  localStorage.setItem('tasks', JSON.stringify(items));
+  displayList();
 });
